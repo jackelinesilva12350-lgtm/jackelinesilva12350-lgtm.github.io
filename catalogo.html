@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Catálogo SDI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-catalogo-geral">
+
+<div class="catalogo-geral-container">
+
+<header class="catalogo-geral-topo">
+<h1>CATÁLOGO SDI</h1>
+<p>Selecione uma categoria</p>
+</header>
+
+<!-- BOTÕES -->
+<div class="menu-categorias">
+
+<button onclick="mostrarCategoria('civil')">CATEGORIA CIVIL</button>
+<button onclick="mostrarCategoria('operacional')">CATEGORIA OPERACIONAL</button>
+<button onclick="mostrarCategoria('mista')">CATEGORIA MISTA</button>
+<button onclick="mostrarCategoria('prestigio')">CATEGORIA DE PRESTÍGIO</button>
+<button onclick="mostrarCategoria('elite')">CATEGORIA ELITE</button>
+
+<button class="ilegal" onclick="mostrarCategoria('paralelo')">
+MERCADO PARALELO
+</button>
+
+</div>
+
+<!-- ÁREA DE ITENS -->
+<div class="area-categorias">
+
+<!-- CIVIL -->
+<div id="civil" class="categoria-bloco">
+<h2>CATEGORIA CIVIL</h2>
+<div class="grid-catalogo">
+<div class="card-civil">
+<h3>Sedan Executivo Urbano</h3>
+<p>Descrição: Veículo discreto e confortável para deslocamentos civis sem chamar atenção.</p>
+<p>Custo: $35.000</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 03/03</p>
+<p>Custo Manutenção: $800</p>
+<p>Efeito: +1 em Perseguições Urbanas.</p>
+</div>
+
+<div class="card-civil">
+<h3>Moto Esportiva Urbana</h3>
+<p>Descrição: Leve e ágil, ideal para fugas rápidas.</p>
+<p>Custo: $18.000</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $500</p>
+<p>Efeito: +2 em Fuga Urbana.</p>
+</div>
+
+<div class="card-civil">
+<h3>Carro Esportivo de Luxo</h3>
+<p>Descrição: Símbolo de status e exposição midiática.</p>
+<p>Custo: $200.000</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 02/02</p>
+<p>Manutenção: $2.000</p>
+<p>Efeito: +2 RP ao adquirir | +1 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>SUV Blindado Civil</h3>
+<p>Descrição: Transporte reforçado para risco elevado.</p>
+<p>Custo: $90.000</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $1.500</p>
+<p>Efeito: Reduz 1 nível de dano veicular (1x por cena).</p>
+</div>
+
+<div class="card-civil">
+<h3>Helicóptero Compartilhado (Uso Civil)</h3>
+<p>Descrição: Transporte aéreo privado sob agendamento.</p>
+<p>Custo: $8.000 por uso</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: Remove penalidade de deslocamento urbano.</p>
+</div>
+
+<div class="card-civil">
+<h3>Advogado Particular</h3>
+<p>Descrição: Defesa legal em crises públicas.</p>
+<p>Custo: $5.000/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +2 em testes legais.</p>
+</div>
+
+<div class="card-civil">
+<h3>Assessor de Imagem</h3>
+<p>Descrição: Gerencia redes sociais e crises midiáticas.</p>
+<p>Custo: $3.000/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +1 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Psicólogo Especializado</h3>
+<p>Descrição: Auxilia no controle emocional pós-missão.</p>
+<p>Custo: $1.200/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: Remove 1 penalidade mental por mês.</p>
+</div>
+
+<div class="card-civil">
+<h3>Treinador Particular</h3>
+<p>Descrição: Treino físico focado em performance.</p>
+<p>Custo: $2.500/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +2 Força (1x por missão).</p>
+</div>
+
+<div class="card-civil">
+<h3>Academia Premium</h3>
+<p>Descrição: Estrutura completa de treino.</p>
+<p>Custo: $800/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +1 testes físicos (1x por missão).</p>
+</div>
+
+<div class="card-civil">
+<h3>Curso de Oratória Avançada</h3>
+<p>Descrição: Aprimora discurso público.</p>
+<p>Custo: $3.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Persuasão permanente.</p>
+</div>
+
+<div class="card-civil">
+<h3>Curso de Investigação Privada</h3>
+<p>Descrição: Técnicas civis de análise e coleta.</p>
+<p>Custo: $6.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Investigação permanente.</p>
+</div>
+
+<div class="card-civil">
+<h3>Curso de Liderança Estratégica</h3>
+<p>Descrição: Desenvolvimento de tomada de decisão.</p>
+<p>Custo: $7.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Estratégia permanente.</p>
+</div>
+
+<div class="card-civil">
+<h3>Curso de Tiro Avançado</h3>
+<p>Descrição: Aprimora precisão com armas civis.</p>
+<p>Custo: $8.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Combate à Distância permanente.</p>
+</div>
+
+<div class="card-civil">
+<h3>Escola de Artes Marciais</h3>
+<p>Descrição: Treinamento técnico corpo a corpo.</p>
+<p>Custo: $5.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Combate Corpo a Corpo permanente.</p>
+</div>
+
+<div class="card-civil">
+<h3>Seguro Médico Premium</h3>
+<p>Descrição: Atendimento prioritário em hospitais civis.</p>
+<p>Custo: $900/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +1 em dado de recuperação</p>
+</div>
+
+<div class="card-civil">
+<h3>Segurança Particular</h3>
+<p>Descrição: Guarda-costas civil.</p>
+<p>Custo: $6.000/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +2 Defesa fora de missão.</p>
+</div>
+
+<div class="card-civil">
+<h3>Sistema Anti-Hack Residencial</h3>
+<p>Descrição: Proteção digital avançada.</p>
+<p>Custo: $4.000</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $600</p>
+<p>Efeito: +2 Defesa Tecnológica.</p>
+</div>
+
+<div class="card-civil">
+<h3>Notebook Criptografado</h3>
+<p>Descrição: Dispositivo seguro para dados.</p>
+<p>Custo: $2.000</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $300</p>
+<p>Efeito: +1 Hack defensivo.</p>
+</div>
+
+<div class="card-civil">
+<h3>Drone Civil Compacto</h3>
+<p>Descrição: Vigilância leve e discreta.</p>
+<p>Custo: $1.200</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $300</p>
+<p>Efeito: +1 Investigação.</p>
+</div>
+
+<div class="card-civil">
+<h3>Fundação Beneficente Própria</h3>
+<p>Descrição: Organização social sob seu nome.</p>
+<p>Custo: $250.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +3 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Evento Beneficente</h3>
+<p>Descrição: Organização de evento social.</p>
+<p>Custo: $15.000</p>
+<p>Tipo: Consumível</p>
+<p>Efeito: +4 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Influenciador Parceiro</h3>
+<p>Descrição: Colaboração com figura pública.</p>
+<p>Custo: $12.000</p>
+<p>Tipo: Consumível</p>
+<p>Efeito: +3 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Restaurante Próprio</h3>
+<p>Descrição: Negócio civil lucrativo.</p>
+<p>Custo: $120.000</p>
+<p>Tipo: Durável</p>
+<p>Efeito: $3.000/mês passivo.</p>
+</div>
+
+<div class="card-civil">
+<h3>Investimento em Startup</h3>
+<p>Descrição: Aplicação de risco.</p>
+<p>Custo: $15.000</p>
+<p>Tipo: Risco</p>
+<p>Efeito: 50% chance de gerar $5.000/mês.</p>
+</div>
+
+<div class="card-civil">
+<h3>Agência de Detetive</h3>
+<p>Descrição: Equipe investigativa privada.</p>
+<p>Custo: $25.000/por serviço</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +2 Investigação (1x por missão).</p>
+</div>
+
+<div class="card-civil">
+<h3>Jato Executivo Compartilhado</h3>
+<p>Descrição: Transporte aéreo de luxo.</p>
+<p>Custo: $30.000 por uso</p>
+<p>Efeito: Remove penalidade internacional.</p>
+</div>
+
+<div class="card-civil">
+<h3>Clínica Particular</h3>
+<p>Descrição: Atendimento médico exclusivo.</p>
+<p>Custo: $50.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +2 em dados de recuperação</p>
+</div>
+
+<div class="card-civil">
+<h3>Estilista Particular</h3>
+<p>Descrição: Imagem pessoal refinada.</p>
+<p>Custo: $2.000/mês</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +1 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Joias de Luxo</h3>
+<p>Descrição: Acessórios de alto padrão.</p>
+<p>Custo: $30.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Clube VIP Empresarial</h3>
+<p>Descrição: Acesso à elite econômica.</p>
+<p>Custo: $10.000/ano</p>
+<p>Efeito: +1 RF a cada compra</p>
+</div>
+
+<div class="card-civil">
+<h3>Simulador de Direção</h3>
+<p>Descrição: Treino avançado de perseguição.</p>
+<p>Custo: $7.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Perseguição permanente.</p>
+</div>
+
+<div class="card-civil">
+<h3>Terapia de Controle Emocional</h3>
+<p>Descrição: Controle de medo e culpa.</p>
+<p>Custo: $3.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: Remove penalidade de medo.</p>
+</div>
+
+<div class="card-civil">
+<h3>Serviço de Limpeza de Imagem</h3>
+<p>Descrição: Gerenciamento de crise pública.</p>
+<p>Custo: $20.000</p>
+<p>Tipo: Consumível</p>
+<p>Efeito: Remove 2 RP negativos.</p>
+</div>
+
+<div class="card-civil">
+<h3>Segurança Digital Premium</h3>
+<p>Descrição: Monitoramento constante de dados.</p>
+<p>Custo: $900/mês</p>
+<p>Efeito: -2 chance de vazamento.</p>
+</div>
+
+<div class="card-civil">
+<h3>Equipe de Relações Públicas</h3>
+<p>Descrição: Gestão estratégica de mídia.</p>
+<p>Custo: $8.000</p>
+<p>Tipo: Consumível</p>
+<p>Efeito: Recupera 3 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Carro Blindado Luxo</h3>
+<p>Descrição: Versão superior de SUV blindado.</p>
+<p>Custo: $150.000</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 04/04</p>
+<p>Manutenção: $2.500</p>
+<p>Efeito: Reduz 2 níveis de dano veicular (1x por cena).</p>
+</div>
+
+<div class="card-civil">
+<h3>Iate Particular</h3>
+<p>Descrição: Luxo extremo e networking.</p>
+<p>Custo: $800.000</p>
+<p>Tipo: Durável</p>
+<p>Efeito: +3 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Coleção de Arte Rara</h3>
+<p>Descrição: Patrimônio cultural.</p>
+<p>Custo: $100.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +2 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Conta Offshore</h3>
+<p>Descrição: Reserva financeira protegida.</p>
+<p>Custo: $10.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: Protege dinheiro contra bloqueio.</p>
+</div>
+
+<div class="card-civil">
+<h3>Escola de Idiomas Intensiva</h3>
+<p>Descrição: Aprendizado acelerado.</p>
+<p>Custo: $4.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Comunicação internacional.</p>
+</div>
+
+<div class="card-civil">
+<h3>Curso de Negociação</h3>
+<p>Descrição: Técnicas avançadas de barganha.</p>
+<p>Custo: $6.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Persuasão comercial.</p>
+</div>
+
+<div class="card-civil">
+<h3>Equipe de Segurança Digital</h3>
+<p>Descrição: Hackers defensivos.</p>
+<p>Custo: $12.000/mês</p>
+<p>Efeito: +2 Defesa tecnológica.</p>
+</div>
+
+<div class="card-civil">
+<h3>Restaurante de Luxo Exclusivo</h3>
+<p>Descrição: Networking com elite.</p>
+<p>Custo: $5.000 por evento</p>
+<p>Efeito: +2 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Curso de Análise Comportamental</h3>
+<p>Descrição: Leitura de microexpressões.</p>
+<p>Custo: $8.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Intuição.</p>
+</div>
+
+<div class="card-civil">
+<h3>Clube de Tiro Privado</h3>
+<p>Descrição: Campo de treino exclusivo.</p>
+<p>Custo: $5.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 Precisão.</p>
+</div>
+
+<div class="card-civil">
+<h3>Equipe de Marketing Digital</h3>
+<p>Descrição: Crescimento online.</p>
+<p>Custo: $60.000/mês</p>
+<p>Efeito: +2 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Serviço de Transporte VIP</h3>
+<p>Descrição: Motorista particular.</p>
+<p>Custo: $4.000/mês</p>
+<p>Efeito: Remove penalidade social em eventos.</p>
+</div>
+
+<div class="card-civil">
+<h3>Consultor Financeiro</h3>
+<p>Descrição: Gestão de investimentos.</p>
+<p>Custo: $3.000/mês</p>
+<p>Efeito: +20% do salário</p>
+</div>
+
+<div class="card-civil">
+<h3>Fundação de Pesquisa Própria</h3>
+<p>Descrição: Financiamento científico sob seu nome.</p>
+<p>Custo: $400.000</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +3 RP | +1 CO por mês (como reconhecimento externo).</p>
+</div>
+</div>
+</div>
+
+<!-- OPERACIONAL -->
+<div id="operacional" class="categoria-bloco">
+<h2>CATEGORIA OPERACIONAL</h2>
+<div class="grid-catalogo">
+<div class="card-civil">
+<h3>Uniforme Tático MK-I</h3>
+<p>Descrição: Traje operacional padrão da SDI, feito com microfibras resistentes a impacto leve e variações térmicas. Possui sistema interno de monitoramento biométrico.</p>
+<p>Custo: 3 CO</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +1 Resistência Física.</p>
+</div>
+
+<div class="card-civil">
+<h3>Uniforme Tático MK-II Reforçado</h3>
+<p>Descrição: Versão aprimorada do uniforme padrão com placas internas modulares e reforço estrutural em pontos vitais.</p>
+<p>Custo: 6 CO</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 2 CO</p>
+<p>Efeito: +2 Resistência | -1 Agilidade se estiver com carga pesada.</p>
+</div>
+
+<div class="card-civil">
+<h3>Capacete HUD Tático</h3>
+<p>Descrição: Capacete com interface digital, mapeamento térmico e identificação automática de ameaças.</p>
+<p>Custo: 5 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 05/05</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +1 Percepção | +1 Estratégia.</p>
+</div>
+
+<div class="card-civil">
+<h3>Drone de Reconhecimento SDI</h3>
+<p>Descrição: Drone compacto com câmera térmica, zoom ótico e transmissão criptografada.</p>
+<p>Custo: 4 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Investigação à distância.</p>
+</div>
+
+<div class="card-civil">
+<h3>Algemas de Contenção Energética</h3>
+<p>Descrição: Algemas com campo elétrico de baixa voltagem que dificultam a fuga.</p>
+<p>Custo: 3 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Contenção.</p>
+</div>
+
+<div class="card-civil">
+<h3>Scanner Biológico Portátil</h3>
+<p>Descrição: Dispositivo que identifica alterações genéticas, toxinas e assinaturas energéticas.</p>
+<p>Custo: 4 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 04/04</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Investigação Biológica.</p>
+</div>
+
+<div class="card-civil">
+<h3>Nanoestimulante SDI</h3>
+<p>Descrição: Injeção de uso controlado que amplifica foco mental por curto período.</p>
+<p>Custo: 2 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: Não possui</p>
+<p>Efeito: +2 em um teste mental.</p>
+</div>
+
+<div class="card-civil">
+<h3>Lentes Forenses Avançadas</h3>
+<p>Descrição: Óculos com leitura térmica, química e reconhecimento facial.</p>
+<p>Custo: 4 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 05/05</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Investigação.</p>
+</div>
+
+<div class="card-civil">
+<h3>Escudo Tático Dobrável</h3>
+<p>Descrição: Gerador portátil de barreira energética de curto alcance.</p>
+<p>Custo: 6 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: 2 CO</p>
+<p>Efeito: +2 Defesa frontal por 1 turno.</p>
+</div>
+
+<div class="card-civil">
+<h3>Bastão Energizado SDI</h3>
+<p>Descrição: Arma não letal que libera descarga elétrica controlada.</p>
+<p>Custo: 3 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +1 Combate Corpo a Corpo.</p>
+</div>
+
+<div class="card-civil">
+<h3>Detector de Frequência</h3>
+<p>Descrição: Identifica sinais ocultos, escutas e transmissões ilegais.</p>
+<p>Custo: 3 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 04/04</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Rastreamento Tecnológico.</p>
+</div>
+
+<div class="card-civil">
+<h3>Granada EMP</h3>
+<p>Descrição: Dispositivo de pulso eletromagnético de curto alcance.</p>
+<p>Custo: 4 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: Não possui</p>
+<p>Efeito: -2 em testes tecnológicos do alvo por 1 turno.</p>
+</div>
+
+<div class="card-civil">
+<h3>Camuflagem Óptica Leve</h3>
+<p>Descrição: Dispositivo que distorce a imagem do usuário temporariamente.</p>
+<p>Custo: 8 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 2 CO</p>
+<p>Efeito: +3 Furtividade por 2 turnos.</p>
+</div>
+
+<div class="card-civil">
+<h3>Inibidor de Sinal</h3>
+<p>Descrição: Emissor portátil que bloqueia comunicações num raio curto.</p>
+<p>Custo: 5 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: -2 Comunicação inimiga.</p>
+</div>
+
+<div class="card-civil">
+<h3>Dardo Paralisante</h3>
+<p>Descrição: Projétil não letal com agente neuromuscular.</p>
+<p>Custo: 2 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: Não possui</p>
+<p>Efeito: +2 Imobilização.</p>
+</div>
+
+<div class="card-civil">
+<h3>Kit Médico Avançado SDI</h3>
+<p>Descrição: Equipamento portátil de estabilização e microcirurgia.</p>
+<p>Custo: 5 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 05/05</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: 2 CO</p>
+<p>Efeito: +2 Cura.</p>
+</div>
+
+<div class="card-civil">
+<h3>Pulseira Rastreadora</h3>
+<p>Descrição: Dispositivo que permite rastrear alvo marcado.</p>
+<p>Custo: 2 CO</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +1 Rastreamento.</p>
+</div>
+
+<div class="card-civil">
+<h3>Sistema de Comunicação Neural</h3>
+<p>Descrição: Interface que permite comunicação silenciosa entre membros da equipe.</p>
+<p>Custo: 7 CO</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 2 CO</p>
+<p>Efeito: +2 Coordenação em equipe.</p>
+</div>
+
+<div class="card-civil">
+<h3>Traje Anti Choque</h3>
+<p>Descrição: Revestimento interno que reduz impacto elétrico.</p>
+<p>Custo: 6 CO</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 2 CO</p>
+<p>Efeito: Reduz dano elétrico em 1 nível.</p>
+</div>
+
+<div class="card-civil">
+<h3>Drone Médico</h3>
+<p>Descrição: Drone autônomo com capacidade de estabilização remota.</p>
+<p>Custo: 6 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 2 CO</p>
+<p>Efeito: +2 Cura remota.</p>
+</div>
+
+<div class="card-civil">
+<h3>Mina de Concussão</h3>
+<p>Descrição: Dispositivo que libera onda de choque não letal.</p>
+<p>Custo: 3 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: Não possui</p>
+<p>Efeito: +2 Atordoamento.</p>
+</div>
+
+<div class="card-civil">
+<h3>Visor Noturno Tático</h3>
+<p>Descrição: Óculos com visão noturna de alta precisão.</p>
+<p>Custo: 4 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 05/05</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Percepção em ambiente escuro.</p>
+</div>
+
+<div class="card-civil">
+<h3>Cinto Multi-ferramenta</h3>
+<p>Descrição: Conjunto de ferramentas táticas compactas.</p>
+<p>Custo: 3 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +1 Testes Técnicos.</p>
+</div>
+
+<div class="card-civil">
+<h3>Luvas de Escalada Magnética</h3>
+<p>Descrição: Permitem aderência aprimorada em superfícies metálicas.</p>
+<p>Custo: 2 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Escalada.</p>
+</div>
+
+<div class="card-civil">
+<h3>Botas Magnéticas Táticas</h3>
+<p>Descrição: Permite estabilidade em superfícies inclinadas metálicas.</p>
+<p>Custo: 4 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 04/04</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: 1 CO</p>
+<p>Efeito: +2 Estabilidade.</p>
+</div>
+
+<div class="card-civil">
+<h3>Microcâmera Espiã Tática</h3>
+<p>Descrição: Câmera ultracompacta com transmissão criptografada em tempo real. Pode ser instalada discretamente em ambientes fechados.</p>
+<p>Custo: 3 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: Não possui</p>
+<p>Efeito: +2 Vigilância em ambiente monitorado.</p>
+</div>
+</div>
+</div>
+
+<!-- MISTA -->
+<div id="mista" class="categoria-bloco">
+<h2>CATEGORIA MISTA</h2>
+<div class="grid-catalogo">
+<div class="card-civil">
+<h3>Uniforme Tático MK-III Adaptativo</h3>
+<p>Descrição: Versão avançada do uniforme SDI com fibras inteligentes que se ajustam à intensidade do impacto recebido e às condições ambientais.</p>
+<p>Custo: $20.000 + 5 CO</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $800 + 1 CO</p>
+<p>Efeito: +2 Resistência | Ignora penalidade ambiental leve.</p>
+</div>
+
+<div class="card-civil">
+<h3>Capacete HUD Avançado com IA</h3>
+<p>Descrição: Capacete com inteligência artificial auxiliar que analisa padrões de combate e sugere movimentações estratégicas.</p>
+<p>Custo: $10.000 + 6 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 04/04</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $500 + 1 CO</p>
+<p>Efeito: +2 Estratégia | +1 Percepção.</p>
+</div>
+
+<div class="card-civil">
+<h3>Drone Tático Armado (Não Letal)</h3>
+<p>Descrição: Drone com disparo elétrico de contenção e análise automática de ameaça.</p>
+<p>Custo: $8.000 + 7 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $700 + 2 CO</p>
+<p>Efeito: +2 Combate à Distância | +1 Vigilância.</p>
+</div>
+
+<div class="card-civil">
+<h3>Exoesqueleto Modular MK-I</h3>
+<p>Descrição: Estrutura externa que aumenta força e estabilidade em combate urbano.</p>
+<p>Custo: $12.000 + 10 CO</p>
+<p>Slot: 3</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $1.500 + 2 CO</p>
+<p>Efeito: +3 Força | -1 Furtividade.</p>
+</div>
+
+<div class="card-civil">
+<h3>Campo de Camuflagem Avançado</h3>
+<p>Descrição: Sistema portátil que distorce a luz e reduz assinatura térmica.</p>
+<p>Custo: $15.000 + 8 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: $800 + 2 CO</p>
+<p>Efeito: +3 Furtividade por 2 turnos.</p>
+</div>
+
+<div class="card-civil">
+<h3>Sistema de Comunicação Neural Expandido</h3>
+<p>Descrição: Comunicação direta entre equipe com latência zero e criptografia militar.</p>
+<p>Custo: $9.000 + 6 CO</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: $600 + 1 CO</p>
+<p>Efeito: +2 Coordenação em equipe.</p>
+</div>
+
+<div class="card-civil">
+<h3>Kit Médico Tático Elite</h3>
+<p>Descrição: Equipamento cirúrgico portátil com nanofibras regenerativas.</p>
+<p>Custo: $10.000 + 6 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 05/05</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $700 + 2 CO</p>
+<p>Efeito: +3 Cura.</p>
+</div>
+
+<div class="card-civil">
+<h3>Escudo Energético Reforçado</h3>
+<p>Descrição: Gerador portátil de campo de energia com resistência ampliada.</p>
+<p>Custo: $10.000 + 9 CO</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $900 + 2 CO</p>
+<p>Efeito: Anula 1 ataque ou concede +3 Defesa por 1 turno.</p>
+</div>
+
+<div class="card-civil">
+<h3>Armadura Modular Pesada</h3>
+<p>Descrição: Armadura de placas reforçadas para combate direto.</p>
+<p>Custo: $15.000 + 12 CO</p>
+<p>Slot: 3</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $2.000 + 2 CO</p>
+<p>Efeito: +3 Resistência | -1 Agilidade.</p>
+</div>
+
+<div class="card-civil">
+<h3>Rifle Tático SDI Autorizado</h3>
+<p>Descrição: Arma de precisão com sistema de estabilização inteligente.</p>
+<p>Custo: $9.000 + 7 CO</p>
+<p>Slot: 3</p>
+<p>Tipo: Durável</p>
+<p>Limitação: Não possui</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: $1.000 + 1 CO</p>
+<p>Efeito: +3 Combate à Distância.</p>
+</div>
+
+<div class="card-civil">
+<h3>Visor de Predição Tática Pro</h3>
+<p>Descrição: Sistema avançado de cálculo probabilístico em combate.</p>
+<p>Custo: $6.000 + 6 CO</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 01/01</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: $600 + 2 CO</p>
+<p>Efeito: Permite rerrolar 1 dado por missão.</p>
+</div>
+</div>
+</div>
+
+<!-- PRESTÍGIO -->
+<div id="prestigio" class="categoria-bloco">
+<h2>CATEGORIA DE PRESTÍGIO</h2>
+<div class="grid-catalogo">
+<div class="card-civil">
+<h3>Armadura Heroica Personalizada</h3>
+<p>Descrição: Traje exclusivo desenvolvido com design público marcante, identidade visual forte e reconhecimento imediato pela mídia.</p>
+<p>Custo: $20.000 + 10 CO + 20 RP</p>
+<p>Requisito: Mínimo 50 RP</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 03/03</p>
+<p>Custo de Manutenção: $2.000 + 2 CO</p>
+<p>Efeito: +3 Defesa | +2 RP passivo mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Campanha Midiática Oficial SDI</h3>
+<p>Descrição: Exposição massiva em redes sociais e mídia tradicional promovendo o agente como símbolo corporativo.</p>
+<p>Custo: $15.000 + 15 RP</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: +5 RP imediato.</p>
+</div>
+
+<div class="card-civil">
+<h3>Licença de Operação Pública Premium</h3>
+<p>Descrição: Autorização para atuar em áreas de alta visibilidade com respaldo político.</p>
+<p>Custo: 10 RP</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: Reduz penalidades públicas em -2.</p>
+</div>
+
+<div class="card-civil">
+<h3>Evento Beneficente Patrocinado</h3>
+<p>Descrição: Aparição oficial em evento social de alto nível.</p>
+<p>Custo: $10.000 + 10 RP</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: +4 RP | +1 Influência Social.</p>
+</div>
+
+<div class="card-civil">
+<h3>Porta-voz Oficial da SDI</h3>
+<p>Descrição: Status institucional de representante público da corporação.</p>
+<p>Custo: 50 RP</p>
+<p>Requisito: 15 RP mínimo</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +2 Persuasão pública | +1 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Parceria Corporativa Premium</h3>
+<p>Descrição: Associação com marca global de alto impacto.</p>
+<p>Custo: 50 RP</p>
+<p>Tipo: Serviço Mensal</p>
+<p>Efeito: Gera $5.000/mês | +1 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Unidade de Segurança de Elite</h3>
+<p>Descrição: Equipe dedicada de suporte em eventos públicos.</p>
+<p>Custo: $12.000 + 12 RP</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: +2 Defesa em eventos públicos.</p>
+</div>
+
+<div class="card-civil">
+<h3>Uniforme Cerimonial Oficial</h3>
+<p>Descrição: Traje de gala utilizado em eventos de prestígio.</p>
+<p>Custo: $8.000 + 8 RP</p>
+<p>Tipo: Durável</p>
+<p>Efeito: +2 Persuasão Social.</p>
+</div>
+
+<div class="card-civil">
+<h3>Documentário Oficial SDI</h3>
+<p>Descrição: Produção audiovisual focada na trajetória do agente.</p>
+<p>Custo: $20.000 + 20 RP</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: +6 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Influência Política Local</h3>
+<p>Descrição: Rede de apoio com vereadores e autoridades municipais.</p>
+<p>Custo: 10 RP</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: Ignora 1 penalidade legal por arco.</p>
+</div>
+
+<div class="card-civil">
+<h3>Patrocínio Tecnológico Exclusivo</h3>
+<p>Descrição: Acesso prioritário a protótipos em troca de exposição pública.</p>
+<p>Custo: 25 RP</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: Reduz custo de 1 item misto em -2 CO.</p>
+</div>
+
+<div class="card-civil">
+<h3>Programa de Mentoria Pública</h3>
+<p>Descrição: Treinamento de jovens aspirantes sob sua imagem.</p>
+<p>Custo: 60 RP</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 RP mensal | +1 Influência Social.</p>
+</div>
+
+<div class="card-civil">
+<h3>Estatuto de Ícone Urbano</h3>
+<p>Descrição: Reconhecimento oficial como símbolo de segurança da cidade.</p>
+<p>Custo: 12 RP</p>
+<p>Requisito: 20 RP mínimo</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +2 RP mensal | -2 hostilidade pública.</p>
+</div>
+
+<div class="card-civil">
+<h3>Turnê de Aparições Internacionais</h3>
+<p>Descrição: Participação em eventos globais sob bandeira SDI.</p>
+<p>Custo: $25.000 + 25 RP</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: +8 RP.</p>
+</div>
+
+<div class="card-civil">
+<h3>Blindagem de Imagem Avançada</h3>
+<p>Descrição: Estrutura de defesa midiática contra escândalos.</p>
+<p>Custo: 10 RP</p>
+<p>Tipo: Serviço</p>
+<p>Efeito: Reduz perda de RP em -3.</p>
+</div>
+
+<div class="card-civil">
+<h3>Estrela na Calçada da Fama</h3>
+<p>Descrição: Reconhecimento público permanente.</p>
+<p>Custo: $30.000 + 35 RP</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +3 RP fixo.</p>
+</div>
+
+<div class="card-civil">
+<h3>Selo de Confiabilidade Corporativa</h3>
+<p>Descrição: Certificação interna de excelência pública.</p>
+<p>Custo: 60 RP</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +1 RP mensal | +1 Persuasão pública.</p>
+</div>
+
+<div class="card-civil">
+<h3>Embaixador Internacional SDI</h3>
+<p>Descrição: Representante oficial da corporação em missões diplomáticas.</p>
+<p>Custo: 40 RP</p>
+<p>Requisito: 30 RP mínimo</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +2 Persuasão Internacional | +1 RP mensal.</p>
+</div>
+
+<div class="card-civil">
+<h3>Fundação com Nome do Agente</h3>
+<p>Descrição: Organização social associada à sua imagem.</p>
+<p>Custo: $100.000 + 100 RP</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +3 RP mensal | +1 Influência Política.</p>
+</div>
+
+<div class="card-civil">
+<h3>Protocolo de Prioridade Pública</h3>
+<p>Descrição: Autorização de resposta prioritária em incidentes televisionados.</p>
+<p>Custo: 45 RP</p>
+<p>Tipo: Permanente</p>
+<p>Efeito: +2 RP ao concluir missão pública com sucesso.</p>
+</div>
+</div>
+</div>
+
+<!-- ELITE -->
+<div id="elite" class="categoria-bloco">
+<h2>CATEGORIA ELITE</h2>
+<div class="grid-catalogo">
+<div class="card-civil">
+<h3>Armadura Titã SDI</h3>
+<p>Descrição: Armadura pesada de última geração com sistema de absorção cinética e redistribuição de impacto. Símbolo máximo de poder operacional.</p>
+<p>Custo: $40.000 + 100 CO + 100 RP</p>
+<p>Requisito: 60 RP mínimo</p>
+<p>Slot: 3</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 04/04</p>
+<p>Custo de Manutenção: $13.000 + 20 CO</p>
+<p>Efeito: +4 Resistência | Reduz 2 níveis de dano físico permanentemente.</p>
+</div>
+
+<div class="card-civil">
+<h3>Exoesqueleto Atlas Prime</h3>
+<p>Descrição: Estrutura externa de amplificação muscular com estabilização neural integrada.</p>
+<p>Custo: $35.000 + 18 CO + 35 RP</p>
+<p>Slot: 3</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $12.500 + 10 CO</p>
+<p>Efeito: +4 Força | +1 Mobilidade.</p>
+</div>
+
+<div class="card-civil">
+<h3>03. Sistema de Overclock Neural Supremo</h3>
+<p>Descrição: Amplificação extrema de processamento cognitivo por curto período.</p>
+<p>Custo: $30.000 + 15 CO + 30 RP</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 01/01</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $12.000 + 10 CO</p>
+<p>Efeito: +5 em um atributo por 1 turno (1x por missão).</p>
+</div>
+
+<div class="card-civil">
+<h3>Campo de Supressão Total</h3>
+<p>Descrição: Emissor que reduz drasticamente manifestações de poder em área.</p>
+<p>Custo: $45.000 + 22 CO + 45 RP</p>
+<p>Slot: 3</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 01/01</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $13.000 + 20 CO</p>
+<p>Efeito: -4 em testes de poder de todos os alvos na área por 1 turno.</p>
+</div>
+
+<div class="card-civil">
+<h3>Drone Estratégico Autônomo Elite</h3>
+<p>Descrição: Drone tático com IA independente e armamento não letal avançado.</p>
+<p>Custo: $28.000 + 16 CO + 30 RP</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 03/03</p>
+<p>Manutenção: $11.800 + 10 CO</p>
+<p>Efeito: +4 Combate à Distância | +2 Vigilância.</p>
+</div>
+</div>
+</div>
+
+<!-- MERCADO PARALELO -->
+<div id="paralelo" class="categoria-bloco mercado-paralelo">
+<h2>MERCADO PARALELO</h2>
+<div class="grid-catalogo">
+<div class="card-civil">
+<h3>⚠️ Atenção</h3>
+<p>Tudo adquirido neste mercado, se for pego, está sujeito a penalidade.</p>
+</div>
+
+<div class="card-civil">
+<h3>Soro de Supressão Emocional Ilegal</h3>
+<p>Descrição: Versão clandestina do estabilizador emocional da SDI. Remove culpa, medo e hesitação temporariamente.</p>
+<p>Custo: $80.000</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: Ignora todas penalidades mentais por 1 missão.</p>
+<p>Risco: Após uso, -2 RP se descoberto.</p>
+</div>
+
+<div class="card-civil">
+<h3>Implante Neural Não Registrado</h3>
+<p>Descrição: Aumenta reflexos por meio de estimulação elétrica constante.</p>
+<p>Custo: $15.000</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 02/02</p>
+<p>Custo de Manutenção: $2.000</p>
+<p>Efeito: +2 Esquiva permanente.</p>
+<p>Risco: 20% chance de falha crítica sob estresse.</p>
+</div>
+
+<div class="card-civil">
+<h3>Arma de Pulso Militar Desativada</h3>
+<p>Descrição: Arma experimental retirada ilegalmente de laboratório.</p>
+<p>Custo: $18.000</p>
+<p>Slot: 3</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: 01/01</p>
+<p>Efeito: +4 Combate à Distância.</p>
+<p>Risco: Ao chegar em 01/02, -1 no bônus por instabilidade.</p>
+</div>
+
+<div class="card-civil">
+<h3>Chip de Hack Fantasma</h3>
+<p>Descrição: Dispositivo que ignora rastreamento digital.</p>
+<p>Custo: $17.000</p>
+<p>Slot: 1</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 04/04</p>
+<p>Manutenções: 02/02</p>
+<p>Efeito: +3 Hack | Ignora rastreio padrão.</p>
+</div>
+
+<div class="card-civil">
+<h3>Granada de Distorção Neural</h3>
+<p>Descrição: Emite pulso que causa desorientação cognitiva.</p>
+<p>Custo: $14.000</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 02/02</p>
+<p>Efeito: -3 testes mentais inimigos por 1 turno.</p>
+</div>
+
+<div class="card-civil">
+<h3>Armadura Tática Não Autorizada</h3>
+<p>Descrição: Versão modificada da MK-II com placas ilegais reforçadas.</p>
+<p>Custo: $22.000</p>
+<p>Slot: 3</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 02/02</p>
+<p>Efeito: +4 Resistência | -2 RP se descoberta.</p>
+</div>
+
+<div class="card-civil">
+<h3>Implante de Adrenalina Sintética</h3>
+<p>Descrição: Sistema que libera picos extremos de energia.</p>
+<p>Custo: $12.000</p>
+<p>Slot: 0</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: 02/02</p>
+<p>Efeito: +4 Força por 1 turno.</p>
+<p>Risco: Após uso, -1 Resistência até fim da missão.</p>
+</div>
+
+<div class="card-civil">
+<h3>Campo de Invisibilidade Instável</h3>
+<p>Descrição: Versão roubada da tecnologia oficial.</p>
+<p>Custo: $20.000</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 01/01</p>
+<p>Manutenções: 01/01</p>
+<p>Efeito: Invisibilidade por 1 turno.</p>
+<p>Risco: 30% chance de falha parcial.</p>
+</div>
+
+<div class="card-civil">
+<h3>Drone Autônomo Pirata</h3>
+<p>Descrição: Drone modificado sem protocolos éticos.</p>
+<p>Custo: $14.000</p>
+<p>Slot: 2</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 03/03</p>
+<p>Manutenções: 02/02</p>
+<p>Efeito: +3 Combate à Distância.</p>
+</div>
+
+<div class="card-civil">
+<h3>Soro de Supremacia Física</h3>
+<p>Descrição: Amplifica capacidades musculares temporariamente.</p>
+<p>Custo: $16.000</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: +5 Força por 1 turno.</p>
+<p>Risco: -2 Resistência no turno seguinte.</p>
+</div>
+
+<div class="card-civil">
+<h3>Hacker Fantasma Contratado</h3>
+<p>Descrição: Serviço clandestino de invasão digital.</p>
+<p>Custo: $10.000</p>
+<p>Tipo: Serviço</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: +4 Hack em uma operação específica.</p>
+</div>
+
+<div class="card-civil">
+<h3>Máscara de Ocultação Biométrica</h3>
+<p>Descrição: Impede reconhecimento facial.</p>
+<p>Custo: $15.000</p>
+<p>Slot: 0</p>
+<p>Tipo: Durável</p>
+<p>Manutenções: 02/02</p>
+<p>Efeito: +3 Furtividade contra vigilância.</p>
+</div>
+
+<div class="card-civil">
+<h3>Mina de Implosão</h3>
+<p>Descrição: Dispositivo de impacto concentrado.</p>
+<p>Custo: $18.000</p>
+<p>Slot: 1</p>
+<p>Tipo: Consumível</p>
+<p>Limitação: 01/01</p>
+<p>Efeito: +5 dano em área.</p>
+</div>
+
+<div class="card-civil">
+<h3>Implante de Supressão de Dor</h3>
+<p>Descrição: Bloqueia percepção de dor temporariamente.</p>
+<p>Custo: $19.000</p>
+<p>Slot: 0</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: 01/01</p>
+<p>Efeito: Ignora penalidade por dano por 1 turno.</p>
+</div>
+
+<div class="card-civil">
+<h3>Arma de Energia Proibida</h3>
+<p>Descrição: Tecnologia experimental banida.</p>
+<p>Custo: $25.000</p>
+<p>Slot: 3</p>
+<p>Tipo: Recarregável</p>
+<p>Limitação: 02/02</p>
+<p>Manutenções: 01/01</p>
+<p>Efeito: +5 Combate à Distância.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function mostrarCategoria(id) {
+
+let categorias = document.querySelectorAll(".categoria-bloco");
+categorias.forEach(cat => {
+cat.style.display = "none";
+});
+
+document.getElementById(id).style.display = "block";
+
+window.scrollTo({
+top: document.getElementById(id).offsetTop - 100,
+behavior: "smooth"
+});
+
+}
+</script>
+
+</body>
+</html>

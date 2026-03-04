@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Classificação de Itens - SDI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-classificacao">
+
+<div class="container">
+
+<header class="topo-classificacao">
+    <h1>CLASSIFICAÇÃO DE ITENS — CONSUMO E MANUTENÇÃO</h1>
+    <p>
+        Todos os itens da SDI passam a ser classificados em três categorias principais, com um subtipo avançado:
+    </p>
+
+    <ul>
+        <li>Itens Consumíveis</li>
+        <li>Equipamentos Recarregáveis</li>
+        <li>Equipamentos Duráveis (mas caso dado, necessita de manutenção)</li>
+    </ul>
+
+    <p>Cada um funciona de forma diferente.</p>
+</header>
+
+<!-- CONSUMÍVEIS -->
+<section class="categoria-item consumivel">
+    <h2>1️⃣ ITENS CONSUMÍVEIS</h2>
+
+    <p>
+        São itens que acabam definitivamente. Quando a limitação chega em 00/XX, o item é perdido e deve ser comprado novamente. Não existe manutenção para itens desta categoria.
+    </p>
+
+    <h3>Exemplos:</h3>
+
+    <div class="exemplo-box">
+        <p>🔹 Granada de Fumaça</p>
+        <p>Limitação: 03/03</p>
+        <p>Tipo: Consumível</p>
+        <p>Quando chega em 00/03 → Descartado</p>
+    </div>
+
+    <div class="exemplo-box">
+        <p>🔹 Kit Médico Compacto</p>
+        <p>Limitação: 05/05</p>
+        <p>Tipo: Consumível</p>
+        <p>Após zerar → Precisa comprar outro</p>
+    </div>
+
+    <p>Esses itens costumam ser mais baratos.</p>
+</section>
+
+<!-- RECARREGÁVEIS -->
+<section class="categoria-item recarregavel">
+    <h2>2️⃣ EQUIPAMENTOS RECARREGÁVEIS</h2>
+
+    <p>
+        São itens tecnológicos que podem ser resetados após missão, mediante custo de manutenção.
+    </p>
+
+    <p>Funcionam assim:</p>
+
+    <div class="fluxo-box">
+        <p>Limitação: 05/05</p>
+        <p>Após uso: 00/05</p>
+        <p>Pode pagar manutenção → volta para 05/05</p>
+    </div>
+
+    <p>Mas aqui entra a parte importante: Eles possuem um Limite de Manutenção Total.</p>
+
+    <div class="fluxo-box">
+        <p>Limitação: 05/05</p>
+        <p>Manutenções Restantes: 03/03</p>
+        <p>03/03 → 02/03 → 01/03 → 00/03</p>
+        <p>Quando chegar em 00/0X: O equipamento não pode mais ser restaurado.</p>
+        <p>Precisa comprar outro.</p>
+    </div>
+
+    <div class="exemplo-box">
+        <p>🔹 Campo de Camuflagem Portátil</p>
+        <p>Limitação: 03/03</p>
+        <p>Manutenções: 02/02</p>
+        <p>Custo de Manutenção: 100$</p>
+        <p>Após duas manutenções completas → equipamento se desgasta permanentemente.</p>
+    </div>
+</section>
+
+<!-- DURÁVEIS -->
+<section class="categoria-item duravel">
+    <h2>3️⃣ EQUIPAMENTOS DURÁVEIS</h2>
+
+    <p>
+        São itens mais caros, mais fortes e com vida útil maior, normalmente sendo necessário manutenção apenas se dano. As manutenções costumam serem menas.
+    </p>
+
+    <p>Funcionam assim:</p>
+
+    <div class="fluxo-box">
+        <p>Limitação: Sem limitação</p>
+        <p>Manutenções Restantes: 02/02</p>
+        <p>Custo de Manutenção: x</p>
+        <p>Quando zerar a manutenção, pode pagar uma Revisão Completa (valor alto), ou comprar outro.</p>
+    </div>
+
+    <div class="exemplo-box">
+        <p>🔹 Exoesqueleto Atlas-β</p>
+        <p>Limitação: sem limitação</p>
+        <p>Manutenções: 03/03</p>
+        <p>Manutenção: $1.500 + 2 CO</p>
+        <p>Quando Manutenções: 00/05 → precisa pagar Revisão Completa de $5.000. Ou substituir por novo.</p>
+    </div>
+</section>
+
+<!-- DESGASTE -->
+<section class="desgaste-box">
+    <h2>📉DESGASTE</h2>
+    <p>Quando o item estiver em:</p>
+    <p>01/05</p>
+    <p>Ele começa a apresentar instabilidade, reduzindo o efeito dele.</p>
+</section>
+
+</div>
+</body>
+</html>
