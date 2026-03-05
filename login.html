@@ -3,54 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Login SDI</title>
-
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2>Login SDI</h2>
+<div class="login-box">
 
-<input type="email" id="email" placeholder="Email">
-<br><br>
+<h1>SDI – Sistema de Agentes</h1>
 
-<input type="password" id="senha" placeholder="Senha">
-<br><br>
+<input type="text" id="nomePersonagem" placeholder="Nome do personagem">
 
-<button onclick="login()">Entrar</button>
+<button onclick="entrar()">Entrar</button>
 
-<p id="status"></p>
+</div>
 
-<script src="firebase.js"></script>
-
-<script>
-
-function login(){
-
-const email = document.getElementById("email").value
-const senha = document.getElementById("senha").value
-
-firebase.auth().signInWithEmailAndPassword(email, senha)
-
-.then(() => {
-
-document.getElementById("status").innerText = "Login realizado!"
-
-window.location.href = "sistema.html"
-
-})
-
-.catch(error => {
-
-document.getElementById("status").innerText = error.message
-
-})
-
-}
-
-</script>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="login.js"></script>
 
 </body>
 </html>
