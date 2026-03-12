@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "SUA_API",
+  apiKey: "AIzaSyBbvROpZivulVavg0az08HQ75kMbNhB4Is",
   authDomain: "sdi-ficha-9d608.firebaseapp.com",
   projectId: "sdi-ficha-9d608",
   storageBucket: "sdi-ficha-9d608.firebasestorage.app",
