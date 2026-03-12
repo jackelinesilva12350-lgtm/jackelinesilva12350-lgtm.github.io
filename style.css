@@ -20,10 +20,11 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: #00C2FF;
+    text-shadow: 0 0 12px rgba(0,194,255,0.8);
 }
 
 header a {
@@ -775,4 +776,5 @@ footer {
     font-size: 0.95rem;
 
 }
+
 
