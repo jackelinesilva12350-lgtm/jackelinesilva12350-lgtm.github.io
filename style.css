@@ -19,11 +19,10 @@ header {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #00C2FF;
+.logo img{
+    height:50px;
+    width:auto;
+    display:block;
 }
 
 header a {
@@ -773,4 +772,5 @@ footer {
 .card-civil p {
     margin-bottom: 6px;
     font-size: 0.95rem;
+
 }
