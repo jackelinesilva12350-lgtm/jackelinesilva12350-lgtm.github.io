@@ -1,19 +1,31 @@
 import { db } from "./firebase.js";
 import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-const nome = localStorage.getItem("personagem");
+window.onload = async function(){
 
-const ref = doc(db,"personagens",nome);
+let usuario = localStorage.getItem("usuario");
+let personagem = localStorage.getItem("personagem");
 
-const snap = await getDoc(ref);
+if(!usuario || !personagem){
+alert("Personagem não encontrado");
+window.location.href = "login.html";
+return;
+}
 
-const data = snap.data();
+const ref = doc(db,"usuarios",usuario,"personagens",personagem);
+const dados = await getDoc(ref);
 
-document.getElementById("dados").innerHTML = `
-Nome: ${data.nome} <br>
-Dinheiro: ${data.dinheiro} <br>
-RP: ${data.rp} <br>
-Força: ${data.forca} <br>
-Agilidade: ${data.agilidade} <br>
-Inteligência: ${data.inteligencia}
-`;
+if(dados.exists()){
+
+let ficha = dados.data();
+
+document.getElementById("nome").innerText = ficha.nome;
+document.getElementById("dinheiro").innerText = ficha.dinheiro;
+document.getElementById("rp").innerText = ficha.rp;
+document.getElementById("forca").innerText = ficha.forca;
+document.getElementById("agilidade").innerText = ficha.agilidade;
+document.getElementById("inteligencia").innerText = ficha.inteligencia;
+
+}
+
+}
