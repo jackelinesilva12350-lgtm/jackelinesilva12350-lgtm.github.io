@@ -2,8 +2,59 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login SDI</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    background:#1e293b;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    width:300px;
+}
+
+.login-box h1{
+    margin-bottom:20px;
+}
+
+.login-box input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+.login-box button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#3b82f6;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#2563eb;
+}
+</style>
+
 </head>
 
 <body>
@@ -12,13 +63,18 @@
 
 <h1>SDI – Sistema de Agentes</h1>
 
-<input type="text" id="nomePersonagem" placeholder="Nome do personagem">
+<input 
+type="text" 
+id="nomePersonagem" 
+placeholder="Nome do personagem"
+>
 
-<button onclick="entrar()">Entrar</button>
+<button onclick="entrar()">
+Entrar
+</button>
 
 </div>
 
-<script type="module" src="firebase.js"></script>
 <script type="module" src="login.js"></script>
 
 </body>
