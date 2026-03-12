@@ -1,29 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<title>Ficha de Herói — SDI</title>
-</head>
-
-<body>
+<div class="ficha-container">
 
 <h1>Ficha de Herói — SDI</h1>
 
+<div class="ficha-info">
 <p><b>Nome:</b> <span id="nome"></span></p>
 <p><b>Idade:</b> <span id="idade"></span></p>
 <p><b>Codinome:</b> <span id="codinome"></span></p>
 <p><b>Equipe:</b> <span id="equipe"></span></p>
 <p><b>Poder:</b> <span id="poder"></span></p>
+</div>
 
-<br>
+<div class="status">
+<div>❤️ Vida: <span id="vida"></span></div>
+<div>⚡ Energia: <span id="energia"></span></div>
+</div>
 
-<p>❤️ Vida: <span id="vida"></span></p>
-<p>⚡ Energia: <span id="energia"></span></p>
-
-<br>
-
-<h3>🎒 Mochila (6 slots)</h3>
-
+<div class="mochila">
+<h3>🎒 Mochila</h3>
 <ul>
 <li id="slot1"></li>
 <li id="slot2"></li>
@@ -32,24 +25,18 @@
 <li id="slot5"></li>
 <li id="slot6"></li>
 </ul>
+</div>
 
-<br>
-
-<h3>🧬 Tributos</h3>
-
+<div class="tributos">
 <p>Combate: <span id="combate"></span></p>
 <p>Intelecto: <span id="intelecto"></span></p>
 <p>Carisma: <span id="carisma"></span></p>
 <p>Vigor: <span id="vigor"></span></p>
 <p>Mobilidade: <span id="mobilidade"></span></p>
+</div>
 
-<br>
+<div class="carteira">
+💳 Saldo disponível: <span id="dinheiro"></span>
+</div>
 
-<h3>💳 Carteira</h3>
-
-<p>Saldo disponível: <span id="dinheiro"></span></p>
-
-<script type="module" src="ficha.js"></script>
-
-</body>
-</html>
+</div>
