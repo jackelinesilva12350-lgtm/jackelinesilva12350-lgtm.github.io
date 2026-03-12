@@ -19,10 +19,11 @@ header {
     z-index: 1000;
 }
 
-.logo img{
-    height:50px;
-    width:auto;
-    display:block;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00C2FF;
 }
 
 header a {
@@ -774,3 +775,4 @@ footer {
     font-size: 0.95rem;
 
 }
+
