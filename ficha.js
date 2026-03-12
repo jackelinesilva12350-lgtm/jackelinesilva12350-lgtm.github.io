@@ -20,11 +20,21 @@ if(dados.exists()){
 let ficha = dados.data();
 
 document.getElementById("nome").innerText = ficha.nome;
-document.getElementById("dinheiro").innerText = ficha.dinheiro;
-document.getElementById("rp").innerText = ficha.rp;
-document.getElementById("forca").innerText = ficha.forca;
-document.getElementById("agilidade").innerText = ficha.agilidade;
-document.getElementById("inteligencia").innerText = ficha.inteligencia;
+document.getElementById("idade").innerText = ficha.idade || "-";
+document.getElementById("codinome").innerText = ficha.codinome || "-";
+document.getElementById("equipe").innerText = ficha.equipe || "-";
+document.getElementById("poder").innerText = ficha.poder || "-";
+
+document.getElementById("vida").innerText = ficha.vida || "50/50";
+document.getElementById("energia").innerText = ficha.energia || "50/50";
+
+document.getElementById("combate").innerText = ficha.combate || 1;
+document.getElementById("intelecto").innerText = ficha.intelecto || 1;
+document.getElementById("carisma").innerText = ficha.carisma || 1;
+document.getElementById("vigor").innerText = ficha.vigor || 1;
+document.getElementById("mobilidade").innerText = ficha.mobilidade || 1;
+
+document.getElementById("dinheiro").innerText = ficha.dinheiro || 0;
 
 }
 
