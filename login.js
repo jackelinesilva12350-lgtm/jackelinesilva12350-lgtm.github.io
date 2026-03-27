@@ -1,47 +1,19 @@
-import { db } from "./firebase.js";
-import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-window.entrar = async function () {
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-try {
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-let nome = document.getElementById("nomePersonagem").value.trim();
+const firebaseConfig = {
+  apiKey: "AIzaSyBbvROpZivulVavg0az08HQ75kMbNhB4Is",
+  authDomain: "sdi-ficha-9d608.firebaseapp.com",
+  projectId: "sdi-ficha-9d608",
+  storageBucket: "sdi-ficha-9d608.firebasestorage.app",
+  messagingSenderId: "1018042015659",
+  appId: "1:1018042015659:web:0f0ec9e7981247ec61fcee"
+};
 
-if(nome === ""){
-alert("Digite o nome do personagem");
-return;
-}
+const app = initializeApp(firebaseConfig);
 
-// referência no banco
-const ref = doc(db, "personagens", nome);
-
-// verifica se já existe
-const personagem = await getDoc(ref);
-
-if(!personagem.exists()){
-
-await setDoc(ref,{
-nome: nome,
-dinheiro: 10000,
-rp: 0,
-forca: 1,
-agilidade: 1,
-inteligencia: 1
-});
-
-}
-
-// salva no navegador
-localStorage.setItem("personagem", nome);
-
-// abre ficha
-window.location.href = "ficha.html";
-
-} catch(error){
-
-console.error(error);
-alert("Erro ao acessar o sistema.");
-
-}
-
-}
+export const auth = getAuth(app);
+export const db = getFirestore(app);
